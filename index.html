@@ -3,72 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eater of Doom | Download Official Build</title>
+    <title>Eater of Doom | Official Download</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             text-align: center; 
-            padding: 0; 
             margin: 0; 
-            background: #0f0f0f; 
-            color: #ffffff;
+            background: #0b0b0b; 
+            color: #eeeeee;
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 100vh;
         }
-        .container {
-            background: #1a1a1a;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            max-width: 500px;
-            margin: 0 auto;
-            border: 1px solid #333;
+        /* The thematic white dot from your UI */
+        .ui-dot {
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #4CAF50; }
-        p { color: #888; margin-bottom: 30px; }
+        .container {
+            background: #141414;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+            max-width: 450px;
+            margin: 0 auto;
+            border: 1px solid #2a2a2a;
+        }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; letter-spacing: 2px; color: #ffffff; }
+        p { color: #777; margin-bottom: 35px; line-height: 1.6; }
         
         .download-btn {
-            background-color: #4CAF50;
+            background-color: #2eb82e;
             border: none;
             color: white;
-            padding: 18px 40px;
+            padding: 20px 45px;
             text-decoration: none;
             display: inline-block;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 800;
             cursor: pointer;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            border-radius: 8px;
+            transition: all 0.25s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .download-btn:hover {
-            background-color: #45a049;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+            background-color: #39e639;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(46, 184, 46, 0.4);
         }
 
-        .version-tag {
+        .version-info {
             display: block;
-            margin-top: 20px;
-            font-size: 0.8rem;
-            color: #555;
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #444;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <div class="ui-dot"></div>
         <h1>EATER OF DOOM</h1>
-        <p>Ready to face the 40-wave gauntlet?</p>
+        <p>The 40-wave gauntlet awaits. Deploy the orbital magnet and survive the extraction.</p>
         
         <a href="https://github.com/Ram-day/GAMEPWS/releases/download/v.2/Gamedemo2.zip" class="download-btn">
-            DOWNLOAD V.1 EXECUTABLE
+            DOWNLOAD V.2 DEMO
         </a>
 
-        <span class="version-tag">Build: v.1 (game.exe.zip)</span>
+        <span class="version-info">Stable Build: Gamedemo2.zip</span>
     </div>
 
 </body>
