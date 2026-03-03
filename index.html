@@ -2,33 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Download My Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater of Doom | Download Official Build</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #222; color: white; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            padding: 0; 
+            margin: 0; 
+            background: #0f0f0f; 
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #333;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #4CAF50; }
+        p { color: #888; margin-bottom: 30px; }
+        
         .download-btn {
             background-color: #4CAF50;
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 18px 40px;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
             cursor: pointer;
-            border-radius: 8px;
-            transition: 0.3s;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
         }
+        
         .download-btn:hover {
             background-color: #45a049;
-            transform: scale(1.05);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+        }
+
+        .version-tag {
+            display: block;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Thanks for playing!</h1>
-    <p>Click the button below to download the latest build.</p>
-    
-    <a href="https://github.com/Ram-day/informatica-download-executable/releases/download/v.1/game.exe.zip">
-        <button class="download-btn">DOWNLOAD ZIP</button>
-    </a>
+
+    <div class="container">
+        <h1>EATER OF DOOM</h1>
+        <p>Ready to face the 40-wave gauntlet?</p>
+        
+        <a href="https://github.com/Ram-day/informatica-download-executable/releases/download/v.1/game.exe.zip" class="download-btn">
+            DOWNLOAD V.1 EXECUTABLE
+        </a>
+
+        <span class="version-tag">Build: v.1 (game.exe.zip)</span>
+    </div>
+
 </body>
 </html>
